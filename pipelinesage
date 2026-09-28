@@ -1,0 +1,18 @@
+Deployment #1038 for payment-service failed in production.
+
+Failure:
+npm dependency resolution error.
+
+Root cause:
+payment-sdk 4.1.0 was incompatible with auth-sdk 7.3.0.
+
+Infrastructure change:
+Node.js version was upgraded from 20.11 to 20.15.
+
+Resolution:
+payment-sdk was upgraded to 4.2.1.
+
+Outcome:
+Deployment succeeded after the dependency upgrade.
+
+This incident occurred on 2026-09-20.
